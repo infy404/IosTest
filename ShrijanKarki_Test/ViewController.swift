@@ -33,6 +33,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var item3_Quantity_TextField: UILabel!
     @IBOutlet weak var item4_Quantity_TextField: UILabel!
     
+    // List Name Label
+    @IBOutlet weak var ListName_Label: UILabel!
+    
+    @IBAction func setClick(_ sender: UIButton) {
+        ListName_Label.text = listname_TextField.text
+        listname_TextField.text = ""
+    }
+    
     @IBAction func item1_Change(_ sender: UIStepper) {
         item1_Quantity_TextField.text = String(Int(sender.value))
     }
@@ -48,6 +56,26 @@ class ViewController: UIViewController {
         item4_Quantity_TextField.text = String(Int(sender.value))
     }
     
+    @IBAction func clear_Click(_ sender: UIButton) {
+        item1_Quantity_TextField.text = "0"
+        item2_Quantity_TextField.text = "0"
+        item3_Quantity_TextField.text = "0"
+        item4_Quantity_TextField.text = "0"
+        
+        item1_Stepper.value = 0
+        item2_Stepper.value = 0
+        item3_Stepper.value = 0
+        item4_Stepper.value = 0
+        
+        ListName_Label.text = "Shopping List"
+        listname_TextField.text = " "
+        item1_TextField.text = " "
+        item2_TextField.text = " "
+        item3_TextField.text = " "
+        item4_TextField.text = " "
+        
+        
+    }
     //Buttons
     @IBOutlet weak var saveBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!

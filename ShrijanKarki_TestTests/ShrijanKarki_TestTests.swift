@@ -2,8 +2,11 @@
 //  ShrijanKarki_TestTests.swift
 //  ShrijanKarki_TestTests
 //
-//  Created by Shreya Karki on 10/31/21.
+//  Created by Shrijan Karki on 10/31/21.
 //
+// Author: Shrijan Karki
+// Student ID: 301222636
+// Date: 10/31/2021
 
 import XCTest
 @testable import ShrijanKarki_Test

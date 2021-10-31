@@ -123,7 +123,7 @@
                                 <rect key="frame" x="234" y="670" width="105" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Clear" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Cancel" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                     </backgroundConfiguration>

@@ -1,8 +1,12 @@
 //
-//  ViewController.swift
+// Filename:  ViewController.swift
+// Author: Shrijan Karki
+// Student ID: 301222636
+// Date: 10/31/2021
 //  ShrijanKarki_Test
 //
 //  Created by Shrijan Karki on 10/31/21.
+//
 //
 
 import UIKit
@@ -36,11 +40,13 @@ class ViewController: UIViewController {
     // List Name Label
     @IBOutlet weak var ListName_Label: UILabel!
     
+    //Sets the name of the text field
     @IBAction func setClick(_ sender: UIButton) {
-        ListName_Label.text = listname_TextField.text
-        listname_TextField.text = ""
+        ListName_Label.text = listname_TextField.text //Fetches the values from the textfield and puts it in the label
+        listname_TextField.text = "" //Clears the textfield.
     }
     
+    //Functionality to change the value of the label when a either buttons are pressed.
     @IBAction func item1_Change(_ sender: UIStepper) {
         item1_Quantity_TextField.text = String(Int(sender.value))
     }
@@ -56,6 +62,8 @@ class ViewController: UIViewController {
         item4_Quantity_TextField.text = String(Int(sender.value))
     }
     
+    
+    //Clears all the values, resets them to defaults.
     @IBAction func clear_Click(_ sender: UIButton) {
         item1_Quantity_TextField.text = "0"
         item2_Quantity_TextField.text = "0"

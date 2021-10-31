@@ -33,6 +33,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var item3_Quantity_TextField: UILabel!
     @IBOutlet weak var item4_Quantity_TextField: UILabel!
     
+    @IBAction func item1_Change(_ sender: UIStepper) {
+        item1_Quantity_TextField.text = String(Int(sender.value))
+    }
+    @IBAction func item2_Change(_ sender: UIStepper) {
+        item2_Quantity_TextField.text = String(Int(sender.value))
+    }
+    
+    @IBAction func item3_Change(_ sender: UIStepper) {
+        item3_Quantity_TextField.text = String(Int(sender.value))
+    }
+    
+    @IBAction func item4_Change(_ sender: UIStepper) {
+        item4_Quantity_TextField.text = String(Int(sender.value))
+    }
+    
     //Buttons
     @IBOutlet weak var saveBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!
